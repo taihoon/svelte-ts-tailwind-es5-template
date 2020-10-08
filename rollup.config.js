@@ -85,7 +85,8 @@ export default {
 		// Making a svelte app compatible with Internet Explorer 11
 		// https://blog.az.sg/posts/svelte-and-ie11/
 		babel({
-			exclude: [ 'node_modules/@babel/**', 'node_modules/core-js/**' ],
+			extensions: ['.ts', '.js', '.mjs', '.html', '.svelte'],
+			exclude: ['node_modules/@babel/**', 'node_modules/core-js/**'],
 			babelHelpers: 'runtime',
 			presets: [
 				[
